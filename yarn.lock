@@ -7,6 +7,11 @@
   resolved "https://registry.npmmirror.com/@types/dom-webcodecs/-/dom-webcodecs-0.1.4.tgz#90a3dd80e5baf72baa79a74cf410e63863992516"
   integrity sha512-dc+xSUnCaCdi/hExZArnLhiavS3E1Rdpp2+zCI6TcmJvz4qgDPBbpvCM7DsQhwRXIIpVMHO6c3s+t+JyCSqYBA==
 
+mobx@^6.6.1:
+  version "6.6.1"
+  resolved "https://registry.npmmirror.com/mobx/-/mobx-6.6.1.tgz#70ee6aa82f25aeb7e7d522bd621207434e509318"
+  integrity sha512-7su3UZv5JF+ohLr2opabjbUAERfXstMY+wiBtey8yNAPoB8H187RaQXuhFjNkH8aE4iHbDWnhDFZw0+5ic4nGQ==
+
 typescript@^4.7.4:
   version "4.7.4"
   resolved "https://registry.npmmirror.com/typescript/-/typescript-4.7.4.tgz#1a88596d1cf47d59507a1bcdfb5b9dfe4d488235"

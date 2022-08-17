@@ -23,6 +23,7 @@ export async function getAllImages(gifUrl) {
         canvasContext.drawImage(decodeRes.image, 0, 0);
         const imageUrl = canvas.toDataURL();
         out.push({
+            image: decodeRes.image,
             url: imageUrl,
             duration: (decodeRes.image.duration || 0) / 1000.0,
         });

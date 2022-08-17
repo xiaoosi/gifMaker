@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@types/dom-webcodecs": "^0.1.4",
+    "mobx": "^6.6.1",
     "typescript": "^4.7.4"
   }
 }

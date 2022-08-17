@@ -10,8 +10,20 @@
 </head>
 
 <body>
-    <canvas id="canvas-app"></canvas>
+    <div class="canvas-box">
+        <canvas id="main-canvas"></canvas>
+    </div>
+    <input type="range">
 </body>
+<!-- 引入mobx -->
 <script src="./build/index.js" type="module"></script>
+<style>
+.canvas-box{
+    text-align: center;
+}
+#main-canvas{
+    width: 500px;
+}
+</style>
 
 </html>

@@ -1,5 +1,6 @@
 export interface imageFrame {
   url: string;
+  image: VideoFrame;
   /** 毫秒 */
   duration: number;
 }
@@ -30,6 +31,7 @@ export async function getAllImages(gifUrl: string) {
     canvasContext.drawImage(decodeRes.image, 0, 0);
     const imageUrl = canvas.toDataURL();
     out.push({
+      image: decodeRes.image,
       url: imageUrl,
       duration: (decodeRes.image.duration || 0) / 1000.0,
     });
