@@ -25,7 +25,7 @@ export async function getAllImages(gifUrl) {
         out.push({
             image: decodeRes.image,
             url: imageUrl,
-            duration: (decodeRes.image.duration || 0) / 1000.0,
+            duration: decodeRes.image.duration || 0,
         });
     }
     return out;

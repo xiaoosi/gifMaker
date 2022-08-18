@@ -13,17 +13,49 @@
     <div class="canvas-box">
         <canvas id="main-canvas"></canvas>
     </div>
-    <input type="range">
+    <div class="range-box"> <input type="range" id="gif-slider"></div>
+
+    <button id="start-btn">start</button>
+
 </body>
 <!-- 引入mobx -->
 <script src="./build/index.js" type="module"></script>
 <style>
-.canvas-box{
-    text-align: center;
-}
-#main-canvas{
-    width: 500px;
-}
+    .canvas-box {
+        text-align: center;
+    }
+
+    #main-canvas {
+        width: 500px;
+    }
+
+    .range-box {
+        text-align: center;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .range-box>input[type="range"] {
+        width: 100%;
+    }
+
+    input[type="range"] {
+        -webkit-appearance: none;
+        width: 200px;
+        height: 3px;
+        /* border-radius: 5px; */
+        background-color: rgba(0, 0, 0, .25);
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 15px;
+        width: 2px;
+        background: rgba(0, 0, 0, .85);
+        cursor: ew-resize;
+        box-shadow: 0 0 2px 0 #555;
+        cursor: pointer;
+    }
 </style>
 
 </html>
